@@ -1,6 +1,6 @@
-<div class="container tab-4 mt-4">
+<div class="container mt-4 tab-4">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-4">
             <div class="card">
                 <div class="card-header">{{ __('New user information') }}</div>
 
