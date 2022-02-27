@@ -4,5 +4,5 @@
 
 
 <script>
-    tabMaker("tab")
+    tabMaker("tab", true)
 </script>
