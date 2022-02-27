@@ -144,23 +144,23 @@
             </li> --}}
             {{-- Full Screen Button --}}
             <li>
-             <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                 <a class="bg-red-800 px-4 py-2 hover:bg-black uppercase text-white font-bold rounded-md shadow-md" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    @csrf
+                </form>
+                <a class="bg-red-800 px-4 py-2 hover:bg-black uppercase text-white font-bold rounded-md shadow-md"
+                    href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
+                    {{ __('Logout') }}
+                </a>
 
-                                   
+
             </li>
             <li class="nav-item">
                 <a class="nav-link" data-widget="fullscreen" href="#" role="button">
                     <i class="fas fa-expand-arrows-alt"></i>
                 </a>
             </li>
-            
+
             {{-- Controller Button --}}
             {{-- <li class="nav-item">
                 <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
@@ -220,14 +220,13 @@
                     </li>
                     <li class="nav-header">
                         Configuration files
-
                     <li class="nav-item">
-                        <a href="#" class="nav-link tab-btn-3">
-                            <i class="nav-icon">
-                                <p>content.json</p>
-                            </i>
+                        <a href="#" class="nav-link tab-btn-4">
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>
+                            <p>Add user</p>
                         </a>
                     </li>
+
                     </li>
                 </ul>
             </nav>
