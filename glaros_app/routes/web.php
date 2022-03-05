@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Route;
 
 // Home Route
 Route::get('/', function () {
-    return view('Client-Welcome');
+    return view("error.404");
 });
 
 // Admin Routes

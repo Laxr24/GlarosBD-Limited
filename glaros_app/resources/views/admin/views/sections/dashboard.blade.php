@@ -20,7 +20,7 @@
         <!-- Main content -->
         <section class="content">
             <div class="p-4 h-auto w-full rounded-md shadow-lg bg-green-400">
-                <p class="p-2 font-mono text-black">I am a tailwind component</p>
+                <p class="p-2 font-mono text-black">Control your site from here</p>
             </div>
         </section>
         <!-- /.content -->
