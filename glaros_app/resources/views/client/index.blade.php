@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="irstheme">
 
-    <title> Dustech - Industry & Factory HTML Template </title>
+    <title> {{config("app.name")}} | No. 1 construction material supplier of Bangladesh</title>
     
     <link href="public/client/assets/css/themify-icons.css" rel="stylesheet">
     <link href="public/client/assets/css/flaticon.css" rel="stylesheet">
@@ -72,7 +72,7 @@
                     <div id="navbar" class="navbar-collapse collapse navigation-holder">
                         <button class="close-navbar"><i class="ti-close"></i></button>
                         <ul class="nav navbar-nav">
-                            <li class="menu-item-has-children">
+                            {{-- <li class="menu-item-has-children">
                                 <a href="#">Home</a>
                                 <ul class="sub-menu">
                                     <li><a href="index-2.html">Home Default</a></li>
@@ -131,7 +131,11 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="contact.html">Contact</a></li> --}}
+
+                            @foreach ($menus as $menu)
+                            <li><a href="{{ $menu["uri"]}}">{{ $menu["name"]}}</a></li>
+                            @endforeach
                         </ul>
                     </div><!-- end of nav-collapse -->
 
