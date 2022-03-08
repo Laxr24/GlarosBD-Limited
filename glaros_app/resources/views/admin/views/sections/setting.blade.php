@@ -22,8 +22,8 @@
           <div class="container pt-4 ">
             <p class="font-mono uppercase text-pink-300 text-center p-2">Showing content of: <span class="text-green-200" id="showFileName"></span></p>
             <textarea id="fileContent" class="p-2 w-full  font-mono tracking-wider border-none outline-none rounded-md text-white bg-gray-700" rows="20"></textarea>
-            <button class="rounded-md bg-gradient-to-br from-green-400 to-green-300 px-4 py-2 m-2" onclick="updateContent()">Update</button>
-            <button class="rounded-md bg-gradient-to-br from-yellow-400 to-yellow-300 px-4 py-2 m-2" onclick="resetFile()">Reset</button>
+            <button class="rounded-md bg-gradient-to-br from-green-400 to-green-300 px-4 py-2 m-2" onclick="Toast('Your file was updated', 3000)">Update</button>
+            <button class="rounded-md bg-gradient-to-br from-yellow-400 to-yellow-300 px-4 py-2 m-2" onclick="Toast('Reset file complete!', 3000, 'warning')">Reset</button>
         </div>
         </section>
         <!-- /.content -->

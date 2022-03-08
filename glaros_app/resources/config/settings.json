@@ -4,21 +4,21 @@
     "menus":[
         {
             "name":"Blog", 
-            "uri":"/blog", 
+            "uri":"#", 
             "visible": true, 
             "is_admin":true,
             "is_test": false
         },
         {
             "name":"Privacy", 
-            "uri":"/privacy", 
+            "uri":"#", 
             "visible": true, 
             "is_admin":false,
             "is_test": true
         },
         {
             "name":"About", 
-            "uri":"/about", 
+            "uri":"#", 
             "visible": true, 
             "is_admin":false,
             "is_test": false

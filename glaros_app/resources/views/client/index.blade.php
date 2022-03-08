@@ -249,7 +249,7 @@
                     <div class="col col-md-6">
                         <div class="right-col">
                             <div class="img-holder">
-                                <img src="assets/images/about.png" alt>
+                                <img src="public/client/assets/images/about.png" alt>
                             </div>
                             <div class="video-holder">
                                 <a href="https://www.youtube.com/embed/7e90gBu4pas?autoplay=1" class="hero-video-btn video-btn"  data-type="iframe" tabindex="0"><i class="fi flaticon-play-button"></i>Watch our intro video</a> 
