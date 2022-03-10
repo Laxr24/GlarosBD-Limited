@@ -34,7 +34,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
         integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    {{-- Axios --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.0/axios.min.js"
+        integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
+
 <body class="hold-transition sidebar-mini layout-fixed">
 
 
@@ -42,13 +48,13 @@
         function tabMaker(tabName, closeFirstSection = false) {
             //prefix for controlling
             var containerName = tabName;
-    
+
             // All classes included using the pefix
             var allClasses = [];
-    
+
             // all elements in the webpage
             var allElements = document.querySelectorAll('*');
-    
+
             //Storing all the used classes using the prefix including btns
             for (var i = 0; i < allElements.length; i++) {
                 var classes = allElements[i].className.toString().split(/\s+/);
@@ -60,16 +66,16 @@
                         }
                 }
             }
-    
+
             var foundClasses = allClasses;
-    
-    
+
+
             // Storing only the tab container classes
             var tabContainerClass = [];
             //Storing only the button classes
             var tabBtnClass = [];
-    
-    
+
+
             // query and separate classnames container - buttons
             foundClasses.forEach(name => {
                 if (name.search(containerName + "-btn")) {
@@ -78,21 +84,21 @@
                     tabBtnClass.push(name)
                 }
             });
-    
-    
-    
+
+
+
             for (let i = 0; i < tabContainerClass.length; i++) {
-    
+
                 // if 2nd param is true the hide the first content 
                 if (i != 0 || closeFirstSection != false) {
                     let singleContainer = document.querySelector("." + tabContainerClass[i]);
                     singleContainer.style.display = "none"
                 }
             }
-    
+
             // Each button takes actions
             tabBtnClass.forEach(btn => {
-    
+
                 // Adding event listener fucntion to all buttons
                 document.querySelector(`.${btn}`).addEventListener("click", (e) => {
                     // Hide all athe container first
@@ -113,21 +119,21 @@
                     e.target.classList.add("active")
                 })
             });
-    
-    
-    
-    
+
+
+
+
         }
-    
-    
+
+
         /*
-    This funciton creates a toast with given params
-    */
+        This funciton creates a toast with given params
+        */
         function Toast(message, time, toastType = null) {
             let div = document.createElement("div")
             let msg = document.createElement("p")
-    
-    
+
+
             // userPreferance
             let toastBG, toastContent
             switch (toastType) {
@@ -154,14 +160,14 @@
             div.style.backgroundColor = toastBG
             div.style.color = toastContent
             div.style.boxShadow = "-1px 3px 8px -3px #0000006e"
-    
-    
+
+
             div.appendChild(msg)
             msg.innerText = message
             document.body.appendChild(div)
-    
-    
-    
+
+
+
             setInterval(() => {
                 div.remove()
             }, time);

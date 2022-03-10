@@ -67,7 +67,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index-2.html"><img src="public/client/assets/images/logo.png" alt></a>
+                        <a class="navbar-brand" href="index-2.html"><img src="public/client/assets/images/logo_glaros.jpg" alt></a>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse navigation-holder">
                         <button class="close-navbar"><i class="ti-close"></i></button>
@@ -157,9 +157,9 @@
                             <div class="call">
                                 <i class="fi flaticon-call"></i>
                                 <p>Call us anytime</p>
-                                <h5>+0177228382</h5>
+                                <h5>+8801919 506070</h5>
                             </div>
-                            <a href="#" class="theme-btn">Contact us</a>
+                            <a href="tel:+8801919506070" class="theme-btn">Contact us</a>
                         </div>
                     </div>
                 </div><!-- end of container -->
@@ -176,21 +176,21 @@
                         <div class="slide-inner slide-bg-image" data-background="public/client/assets/images/slider/slide-1.jpg">
                             <div class="container">
                                 <div data-swiper-parallax="300" class="slide-title">
-                                    <h2>The Best Move you will Ever Make</h2>
+                                    <h2>The Best construction material supplier in Bangladesh</h2>
                                 </div>
                                 <div data-swiper-parallax="400" class="slide-text">
-                                    <p>Recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa</p>
+                                    <p>We supply your construction materials for any scale project</p>
                                 </div>
                                 <div class="clearfix"></div>
                                 <div data-swiper-parallax="500" class="slide-btns">
                                     <a href="#" class="theme-btn">Our services</a> 
-                                    <a href="#" class="theme-btn-s2">More about us</a> 
+                                    {{-- <a href="#" class="theme-btn-s2">More about us</a>  --}}
                                 </div>
                             </div>
                         </div> <!-- end slide-inner --> 
                     </div> <!-- end swiper-slide -->
 
-                    <div class="swiper-slide">
+                    {{-- <div class="swiper-slide">
                         <div class="slide-inner slide-bg-image" data-background="public/client/assets/images/slider/slide-2.jpg">
                             <div class="container">
                                 <div data-swiper-parallax="300" class="slide-title">
@@ -206,7 +206,7 @@
                                 </div>
                             </div>
                         </div> <!-- end slide-inner --> 
-                    </div> <!-- end swiper-slide -->
+                    </div> <!-- end swiper-slide --> --}}
                 </div>
                 <!-- end swiper-wrapper -->
 
@@ -226,33 +226,33 @@
                     <div class="col col-md-6">
                         <div class="section-title">
                             <span>About us</span>
-                            <h2>We set the standards others try to live up to.</h2>
+                            <h2>We're glaros BD</h2>
                         </div>
                         <div class="details">
-                            <p>It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright</p>
+                            <p>For your demand of various constrction materials such as stones, Oils, Cements, Resin or any tools you need. We supply them all. </p>
                             <div class="clearfix">
                                 <ul>
-                                    <li><i class="ti-check"></i> Cut out of an illustrated magazine</li>
-                                    <li><i class="ti-check"></i> Showed a lady fitted out</li>
+                                    <li><i class="ti-check"></i>Industrial Cement</li>
+                                    <li><i class="ti-check"></i> Coal Tar Epoxy</li>
                                 </ul>
                                 <ul>
-                                    <li><i class="ti-check"></i> Raising a heavy fur muff</li>
-                                    <li><i class="ti-check"></i> Magazine and housed in a nice</li>
+                                    <li><i class="ti-check"></i> Phenolic Resin</li>
+                                    <li><i class="ti-check"></i> Polyester Resin</li>
                                 </ul>
                             </div>
                             <div class="btns">
-                                <a href="#" class="theme-btn">Our Services</a>
-                                <a href="#" class="theme-btn-s3">Contact with us</a>
+                                {{-- <a href="#" class="https://www.facebook.com/epoxyresinbd">Our Services</a> --}}
+                                <a href="tel:+8801919-506070" class="theme-btn-s3">Contact with us</a>
                             </div>
                         </div>
                     </div>
                     <div class="col col-md-6">
                         <div class="right-col">
                             <div class="img-holder">
-                                <img src="public/client/assets/images/about.png" alt>
+                                <img src="public/client/assets/images/intro.png" alt>
                             </div>
                             <div class="video-holder">
-                                <a href="https://www.youtube.com/embed/7e90gBu4pas?autoplay=1" class="hero-video-btn video-btn"  data-type="iframe" tabindex="0"><i class="fi flaticon-play-button"></i>Watch our intro video</a> 
+                                <a href="https://www.youtube.com/watch?v=6fsrLOgl69U" class="hero-video-btn video-btn"  data-type="iframe" tabindex="0"><i class="fi flaticon-play-button"></i>Watch our product demo video</a> 
                             </div>
                         </div>
                     </div>
@@ -269,12 +269,12 @@
                     <div class="col col-md-6">
                         <div class="section-title-s2">
                             <span>Our Industry Solutions</span>
-                            <h2>Delivering the Best Global Industry Services.</h2>
+                            <h2>Delivering the Best Industry Construction Material Services.</h2>
                         </div>
                     </div>
                     <div class="col col-md-6">
                         <div class="title-text">
-                            <p>Recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm </p>
+                            <p>We'be been the trusted supplier in Bangladesh for more than 10 years.</p>
                         </div>
                     </div>
                 </div>
@@ -283,44 +283,26 @@
                         <div class="service-grids clearfix">
                             <div class="grid">
                                 <i class="fi flaticon-gear"></i>
-                                <h4><a href="#">Mechanical Engineering</a></h4>
-                                <p> Samsa was a travelling salesman and above it there hung a picture that he had recently cut out of antrt </p>
-                                <a href="#" class="read-more">Read More <i class="fi flaticon-next"></i></a>
+                                <h4><a href="#">Architectural Products and tools</a></h4>
+                                {{-- <p> </p> --}}
+                                {{-- <a href="#" class="read-more">Read More <i class="fi flaticon-next"></i></a> --}}
                             </div>
-                            <div class="grid">
-                                <i class="fi flaticon-expansion"></i>
-                                <h4><a href="#">Sanitary & Plumbing</a></h4>
-                                <p> Samsa was a travelling salesman and above it there hung a picture that he had recently cut out of antrt </p>
-                                <a href="#" class="read-more">Read More <i class="fi flaticon-next"></i></a>
-                            </div>
+                            
                             <div class="grid">
                                 <i class="fi flaticon-oil"></i>
-                                <h4><a href="#">Oil & Gas Production</a></h4>
-                                <p> Samsa was a travelling salesman and above it there hung a picture that he had recently cut out of antrt </p>
-                                <a href="#" class="read-more">Read More <i class="fi flaticon-next"></i></a>
+                                <h4><a href="#">Oil & Resin Supply</a></h4>
+                              
                             </div>
                             <div class="grid">
                                 <i class="fi flaticon-pharmacy"></i>
-                                <h4><a href="#">Pharmaceutical Research</a></h4>
-                                <p> Samsa was a travelling salesman and above it there hung a picture that he had recently cut out of antrt </p>
-                                <a href="#" class="read-more">Read More <i class="fi flaticon-next"></i></a>
+                                <h4><a href="#">Safe transportation of products</a></h4>
+                               
                             </div>
-                            <div class="grid">
-                                <i class="fi flaticon-paint-palette"></i>
-                                <h4><a href="#">Painting &Protective</a></h4>
-                                <p> Samsa was a travelling salesman and above it there hung a picture that he had recently cut out of antrt </p>
-                                <a href="#" class="read-more">Read More <i class="fi flaticon-next"></i></a>
-                            </div>
-                            <div class="grid">
-                                <i class="fi flaticon-solar-energy"></i>
-                                <h4><a href="#">Electrical & Power</a></h4>
-                                <p> Samsa was a travelling salesman and above it there hung a picture that he had recently cut out of antrt </p>
-                                <a href="#" class="read-more">Read More <i class="fi flaticon-next"></i></a>
-                            </div>
+                            
                         </div>
-                        <div class="view-all">
+                        {{-- <div class="view-all">
                             <p>Please check out our <a href="#">All Services</a></p>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
             </div> <!-- end container -->
@@ -336,7 +318,7 @@
                         <div class="section-title-s3">
                             <span>Our Features</span>
                             <h2>Why Choose Us!</h2>
-                            <p>Hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him</p>
+                            <p>We deliver the products we promise within the shortest period. We're the biggest supply chain in Bangladesh. You can track your products and customize them as per your need.</p>
                         </div>
                     </div>
                 </div>
@@ -346,22 +328,22 @@
                             <div class="grid">
                                 <i class="fi flaticon-network-1"></i>
                                 <h3>Professional Team</h3>
-                                <p>Whole of her lower arm towards the viewer. Gregor then turned to look out the window</p>
+                                <p>Our whole service team is very much professinal on their duty.</p>
                             </div>
                             <div class="grid">
                                 <i class="fi flaticon-circular-label-with-certified-stamp"></i>
-                                <h3>Certified engineers</h3>
-                                <p>Whole of her lower arm towards the viewer. Gregor then turned to look out the window</p>
+                                <h3>Certified products</h3>
+                                <p>Our products are safe for general purpose and till the destination</p>
                             </div>
                             <div class="grid">
                                 <i class="fi flaticon-chip"></i>
                                 <h3>Latest Technology</h3>
-                                <p>Whole of her lower arm towards the viewer. Gregor then turned to look out the window</p>
+                                <p>We make use of the latest technology availble to track and distribute our products</p>
                             </div>
                             <div class="grid">
                                 <i class="fi flaticon-24-hours"></i>
                                 <h3>27/7 Support</h3>
-                                <p>Whole of her lower arm towards the viewer. Gregor then turned to look out the window</p>
+                                <p>No worries unless you get what you need. Leave it to us.</p>
                             </div>
                         </div>
                     </div>
@@ -372,7 +354,7 @@
 
 
         <!-- start testimonials-section -->
-        <section class="testimonials-section">
+        {{-- <section class="testimonials-section">
             <div class="container">
                 <div class="row">
                     <div class="col col-lg-6 col-lg-offset-3">
@@ -439,12 +421,12 @@
                     </div>
                 </div>
             </div> <!-- end container -->
-        </section>
+        </section> --}}
         <!-- end testimonials-section -->
 
 
         <!-- start featured-project-section -->
-        <section class="featured-project-section section-padding">
+        {{-- <section class="featured-project-section section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
@@ -492,12 +474,12 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- end featured-project-section -->
 
 
         <!-- start partners-section -->
-        <section class="partners-section">
+        {{-- <section class="partners-section">
             <h2 class="hidden">Partners</h2>
             <div class="container">
                 <div class="row">
@@ -522,12 +504,12 @@
                     </div>
                 </div>
             </div> <!-- end container -->
-        </section>
+        </section> --}}
         <!-- end partners-section -->
 
 
         <!-- start fun-fact-section -->
-        <section class="fun-fact-section">
+        <section class="fun-fact-section mt-2">
             <div class="container">
                 <div class="row">
                     <div class="col col-xs-12">
@@ -535,14 +517,14 @@
                             <div class="grid">
                                 <div class="info">
                                     <i class="fi flaticon-worker"></i>
-                                    <h3><span class="odometer" data-count="1200">00</span></h3>
+                                    <h3><span class="odometer" data-count="50">00</span></h3>
                                     <p>Employed</p>
                                 </div>
                             </div>
                             <div class="grid">
                                 <div class="info">
                                     <i class="fi flaticon-engineer"></i>
-                                    <h3><span class="odometer" data-count="1500">00</span></h3>
+                                    <h3><span class="odometer" data-count="150">00</span></h3>
                                     <p>Project Completed</p>
                                 </div>
                             </div>
@@ -550,14 +532,14 @@
                                 <div class="info">
                                     <i class="fi flaticon-trophy"></i>
                                     <h3><span class="odometer" data-count="25">00</span>+</h3>
-                                    <p>Award Won</p>
+                                    <p>Trusted clients</p>
                                 </div>
                             </div>
                             <div class="grid">
                                 <div class="info">
                                     <i class="fi flaticon-like-1"></i>
-                                    <h3><span class="odometer" data-count="100">00</span>%</h3>
-                                    <p>Satisfied customers</p>
+                                    <h3><span class="odometer" data-count="1000">00</span>g</h3>
+                                    <p>Supplied materials</p>
                                 </div>
                             </div>
                         </div>
@@ -569,7 +551,7 @@
 
 
         <!-- start team-section -->
-        <section class="team-section section-padding">
+        {{-- <section class="team-section section-padding">
             <div class="container">
                 <div class="row">
                     <div class="col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
@@ -663,12 +645,12 @@
                     </div>
                 </div>
             </div> <!-- end container -->
-        </section>
+        </section> --}}
         <!-- end team-section -->
 
 
         <!-- start quote-section -->
-        <section class="quote-section">
+        {{-- <section class="quote-section">
             <div class="content-area clearfix">
                 <div class="left-col">
                     <h2>Imagination What we can easily see is only a small</h2>
@@ -721,7 +703,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> --}}
         <!-- end quote-section -->
 
 
@@ -731,9 +713,9 @@
                 <div class="row">
                     <div class="col col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2">
                         <div class="section-title-s5">
-                            <span>Insight and Trends</span>
-                            <h2>Industrial News</h2>
-                            <p>Hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him</p>
+                            <span>Our products and services</span>
+                            <h2>Our services</h2>
+                            <p>Our core services are to make deliver construction material products to you. Here are a few of them that we do.</p>
                         </div>
                     </div>
                 </div> 
@@ -742,37 +724,49 @@
                         <div class="blog-grids">
                             <div class="grid">
                                 <div class="entry-media">
-                                    <img src="public/client/assets/images/blog/img-1.jpg" alt>
+                                    <img src="public/client/assets/images/blog/bg1.jpg" alt>
                                 </div>
                                 <div class="entry-body">
-                                    <div class="cats">Industry, Factory</div>
-                                    <h4><a href="#">Manufacturing is a sector that is constantly evolving</a></h4>
-                                    <p class="date">Oct 26 2019</p>
-                                    <a href="#" class="read-more">Read More <i class="fi flaticon-next"></i></a>
+                                    <div class="cats">Epoxy Resin</div>
+                                    <h4><a href="#">Any scale and type of epoxy resin</a></h4>
+                                    <p class="date">Latest update</p>
+                                    <a href="tel:+8801919506070" class="read-more">Call us to know more <i class="fi flaticon-next"></i></a>
                                 </div>
                             </div>
                             <div class="grid">
                                 <div class="entry-media">
-                                    <img src="public/client/assets/images/blog/img-2.jpg" alt>
+                                    <img src="public/client/assets/images/blog/bg2.jpg" alt>
                                 </div>
                                 <div class="entry-body">
-                                    <div class="cats">Industry, Factory</div>
-                                    <h4><a href="#">It’s a surefire way to keep abreast of the competition and sometimes</a></h4>
-                                    <p class="date">Oct 26 2019</p>
-                                    <a href="#" class="read-more">Read More <i class="fi flaticon-next"></i></a>
+                                    <div class="cats">Polyester Resin</div>
+                                    <h4><a href="#">Any scale and size of polyster resin.</a></h4>
+                                    <p class="date">Latest update</p>
+                                    <a href="tel:+8801919506070" class="read-more">Call us to know more <i class="fi flaticon-next"></i></a>
                                 </div>
                             </div>
                             <div class="grid">
                                 <div class="entry-media">
-                                    <img src="public/client/assets/images/blog/img-3.jpg" alt>
+                                    <img src="public/client/assets/images/blog/bg3.jpg" alt>
                                 </div>
                                 <div class="entry-body">
-                                    <div class="cats">Industry, Factory</div>
-                                    <h4><a href="#">Community would not exist if it were not for manufacturing being</a></h4>
-                                    <p class="date">Oct 26 2019</p>
-                                    <a href="#" class="read-more">Read More <i class="fi flaticon-next"></i></a>
+                                    <div class="cats">Phenolic Resin</div>
+                                    <h4><a href="#">Any scale of Phenolic resin</a></h4>
+                                    <p class="date">Latest update</p>
+                                    <a href="tel:+8801919506070" class="read-more">Call us to know more <i class="fi flaticon-next"></i></a>
                                 </div>
                             </div>
+                            <div class="grid">
+                                <div class="entry-media">
+                                    <img src="public/client/assets/images/blog/bg4.jpg" alt>
+                                </div>
+                                <div class="entry-body">
+                                    <div class="cats">Coal Tar Epoxy</div>
+                                    <h4><a href="#">Any scale of Coal Tar Epoxy</a></h4>
+                                    <p class="date">Latest update</p>
+                                    <a href="tel:+8801919506070" class="read-more">Call us to know more <i class="fi flaticon-next"></i></a>
+                                </div>
+                            </div>
+                            
                         </div>
                     </div>
                 </div>               
@@ -788,7 +782,7 @@
                     <div class="col col-lg-6 col-md-6">
                         <div class="cta-text">
                             <h3>Lets Get in Touch!</h3>
-                            <p>Raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather.</p>
+                            <p>To know more or order any materials call us directly to take appointment or visit us.</p>
                         </div>
                     </div>
                     <div class="col col-lg-5 col-lg-offset-1 col-md-6">
@@ -796,12 +790,12 @@
                             <div>
                                 <i class="fi flaticon-call"></i>
                                 <h4>Call us</h4>
-                                <p>+654894754</p>
+                                <p>+8801919506070</p>
                             </div>
                             <div>
                                 <i class="fi flaticon-contact"></i>
                                 <h4>Email us</h4>
-                                <p>demo@example.com</p>
+                                <p>arifr1048@gmail.com</p>
                             </div>
                         </div>
                     </div>
@@ -819,16 +813,16 @@
                         <div class="col col-lg-3 col-md-3 col-sm-6">
                             <div class="widget about-widget">
                                 <div class="logo widget-title">
-                                    <img src="public/client/assets/images/footer-logo.png" alt>
+                                    <img src="public/client/assets/images/logo_glaros.jpg" alt>
                                 </div>
-                                <p>Mikago arm towards the viewer gregor then turned to look out the window at the dull weather</p>
+                                <p>Visit and follow us on</p>
                                 <div class="social-icons">
                                     <ul>
-                                        <li><a href="#"><i class="ti-facebook"></i></a></li>
-                                        <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                        <li><a href="https://www.facebook.com/epoxyresinbd"><i class="ti-facebook"></i></a></li>
+                                        {{-- <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
                                         <li><a href="#"><i class="ti-linkedin"></i></a></li>
                                         <li><a href="#"><i class="ti-pinterest"></i></a></li>
-                                        <li><a href="#"><i class="ti-vimeo-alt"></i></a></li>
+                                        <li><a href="#"><i class="ti-vimeo-alt"></i></a></li> --}}
                                     </ul>
                                 </div>
                             </div>
@@ -858,9 +852,9 @@
                                     <h3>Our Address</h3>
                                 </div>
                                 <ul>
-                                    <li>25/19 Duel aveniew, new Booston town, Ghana</li>
-                                    <li><span>Phone:</span> 84667441</li>
-                                    <li><span>Email:</span> demo@example.com</li>
+                                    <li>Ka,57/4, 3rd floor, Kuril chowrasta, Progoti Sarani Road, Vatara, Dhaka-1229</li>
+                                    <li><span>Phone:</span> +8801919-506070</li>
+                                    <li><span>Email:</span>arifr1048@gmail.com</li>
                                     <li><span>Office Time:</span> 10AM- 5PM</li>
                                 </ul>
                             </div>
@@ -889,13 +883,13 @@
                     <div class="row">
                         <div class="separator"></div>
                         <div class="col col-xs-12">
-                            <p class="copyright"><a href="templateshub.net">Templates Hub</a></p>
+                            <p class="copyright"><a href="templateshub.net">Glaoros BD</a></p>
                             <div class="extra-link">
                                 <ul>
-                                    <li><a href="#">Privace & Policy</a></li>
+                                    {{-- <li><a href="#">Privace & Policy</a></li>
                                     <li><a href="#">Terms</a></li>
                                     <li><a href="#">About us</a></li>
-                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">FAQ</a></li> --}}
                                 </ul>
                             </div>
                         </div>

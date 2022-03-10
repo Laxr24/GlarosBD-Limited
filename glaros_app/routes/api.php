@@ -33,3 +33,15 @@ Route::get("/settings", function(){
     }
     return $testObj;
 }); 
+
+
+Route::post("/updateHomepage", function(Request $request){
+    // rewritting fiel 
+    $path = base_path()."/resources/views/client/index.blade.php";
+    $content = new Content(); 
+    $data = $request->content; 
+    if($data != null || $data != ""){
+        $content->rewrite($path, $data); 
+    }
+    return $content->FileRead($path); 
+}); 

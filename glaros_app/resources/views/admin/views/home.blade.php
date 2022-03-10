@@ -215,7 +215,7 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link tab-btn-2">
                             <i class="nav-icon fas fa-cog fa-fw"></i>
-                            <p>Site settings</p>
+                            <p>Theme settings</p>
                         </a>
                     </li>
                     <li class="nav-header">
