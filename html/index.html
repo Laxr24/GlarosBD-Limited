@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,35 +9,72 @@
     <link rel="shortcut icon" href="public/client/asset/favicon.svg" type="image/x-icon">
 
     <!-- CSS Sheets -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+        integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"
+        integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        referrerpolicy="no-referrer" />
 
 
 
 </head>
-<body class="">
-    
-    <!-- Hero Section -->
-    <div class="w-screen h-screen bg-green-800 flex justify-center items-center">
-        
-        <!-- Contents -->
-            <div class="bg-red-400 p-24 grid grid-cols-1 md:grid-cols-2 gap-10">
-                <!-- logo -->
-                <img src="public/client/asset/icon.svg" alt="">
-                <!-- end logo -->
 
-                <!-- Brankd Intro -->
-                <div class="items-center">
-                    <h1 class="uppercase tracking-widest">glaros bd</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vitae itaque perferendis laudantium cum repudiandae quisquam cupiditate modi velit quis.</p>
+<body> 
+    <div class="">
+        <!-- Hero -->
+        <div class="md:mt-36 mt-8">
+            <div class="grid md:grid-cols-2 md:p-2">
+                <!-- img -->
+                <div class=" flex justify-center items-center p-2">
+                    <img src="./public/client/asset/hero_img.png" alt="">
                 </div>
-                <!-- end Brankd Intro -->
+                <!-- end of the img -->
+
+                <!-- Content -->
+                <div class="max-w-md  mt-4">
+                    <h1 class="uppercase md:text-left text-center  font-bold"
+                        style="letter-spacing: 1.5rem; font-size: 2rem;font-weight: 500;">glaros bd</h1>
+                    <div class="md:flex mt-8 mx-auto">
+                        <img class="flex-2 mb-5 mx-auto w-24 md:w-full" src="./public/client/asset/icon.svg" alt="">
+                        <div class="flex justify-center items-center">
+                            <p class="text-justify flex-3 mx-auto text-center md:text-left px-10 text-sm"
+                                style="letter-spacing: 1px;">Were the best glaros product sellerin bangladesh . we sell
+                                some really cool product which will blow your mind but
+                                the most important thing is we have dedicated team to
+                                work for your service</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of the Content -->
             </div>
-        <!-- end of Contents -->
+
+        </div>
+        <!-- End of the Hero -->
+
+        <!-- ribbon -->
+        <div class="max-w-lg mx-auto md:px-92 text-center  py-4 flex justify-around shadow-md mt-24">
+            <p class="text-center uppercase">resin</p>
+            <p class="text-center uppercase">silicon</p>
+            <p class="text-center uppercase">mika</p>
+            <p class="text-center uppercase">silicate</p>
+
+        </div>
+        <!-- end of ribbon -->
+
+
+        <!-- Scroll indicator  -->
+        <img src="./public/client/asset/mouseScroll.png" alt=""
+            class="mt-10 md:mt-24 mx-auto animate__animated animate__bounce animate__infinite 	infinite animate__slow">
+        <!-- end Scroll indicator  -->
     </div>
-    <!-- End of Hero Section -->
+
+
+    <!-- <div class=" h-screen bg-green-200"></div> -->
 </body>
+
 </html>
