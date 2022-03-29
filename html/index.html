@@ -21,10 +21,21 @@
         referrerpolicy="no-referrer" />
 
 
+    <style>
+        * {
+            scroll-behavior: smooth;
+            scrollbar-width: 0;
+            scrollbar-3dlight-color: none;
+            scrollbar-base-color: none;
+            scrollbar-color: none;
+        }
+    </style>
 
 </head>
 
-<body> 
+<body>
+
+    <!-- Hero Container -->
     <div class="">
         <!-- Hero -->
         <div class="md:mt-36 mt-8">
@@ -72,28 +83,109 @@
             class="mt-10 md:mt-24 mx-auto animate__fadeInUp animate__animated animate__bounce animate__infinite 	infinite animate__slow">
         <!-- end Scroll indicator  -->
     </div>
+    <!-- End of the Hero Container -->
 
 
 
     <!-- product gallery -->
     <div class="container mx-auto bg-gray-50 my-36 px-6 py-10 md:px-16">
         <div class="grid md:grid-cols-4 gap-8">
-           
+
             <!-- single card -->
             <div class="shadow-md">
                 <img src="./public/client/asset/productImage.png" class="w-full" alt="">
-                <p class="text-center uppercase px-4 mt-2 py-2 border border-black">hello</p>
+                <a href="#resin" class="block text-center uppercase px-4 mt-2 py-2 border border-black">Resin</a>
             </div>
             <!-- end of single card -->
-          
+
+            <!-- single card -->
+            <div class="shadow-md">
+                <img src="./public/client/asset/productImage.png" class="w-full" alt="">
+                <a href="#mica" class="block text-center uppercase px-4 mt-2 py-2 border border-black">Mica</a>
+            </div>
+            <!-- end of single card -->
+
         </div>
     </div>
     <!-- end de product gallery -->
 
+
+
+    <!-- Single descriptive produt information -->
+    <div class="my-16" id="resin">
+        <div class="container p-6 md:p-10  mx-auto grid md:grid-cols-2 gap-3">
+            <div class=" max-w-md"><img class="mx-auto" src="public/client/asset/productImage.png" alt=""></div>
+            <!-- content -->
+            <div class="max-w-md px-3">
+                <h1 class="uppercase text-center px-4 py-2 border border-black"
+                    style="font-size: 1.4em; font-weight: 400; letter-spacing: 2px;">epoxy resin</h1>
+
+                <hr class="my-3 border-4 border-green-600">
+
+                <p class="py-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias ut deleniti, facilis
+                    optio mollitia
+                    perspiciatis aliquid voluptatum. Ullam, ipsa hic.</p>
+
+                <ul class="list-disc">
+                    <li>Best quality</li>
+                    <li>Best quality</li>
+                    <li>Best quality</li>
+                    <li>Best quality</li>
+                </ul>
+            </div>
+            <!-- end content -->
+
+        </div>
+        <img src="public/client/asset/description_arraow_purple.png" alt="" class="float-right">
+    </div>
+    <!-- End of the Single descriptive produt information -->
+
+
+    <!-- Single descriptive produt information -->
+    <div class="my-16" id="mica">
+        <div class="container p-6 md:p-10  mx-auto grid md:grid-cols-2 gap-3">
+            <div class=" max-w-md"><img class="mx-auto" src="public/client/asset/productImage.png" alt=""></div>
+            <!-- content -->
+            <div class="max-w-md px-3">
+                <h1 class="uppercase text-center px-4 py-2 border border-black"
+                    style="font-size: 1.4em; font-weight: 400; letter-spacing: 2px;">mica</h1>
+
+                <hr class="my-3 border-4 border-yellow-600">
+
+                <p class="py-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias ut deleniti, facilis
+                    optio mollitia
+                    perspiciatis aliquid voluptatum. Ullam, ipsa hic.</p>
+            </div>
+            <!-- end content -->
+
+        </div>
+        <img src="public/client/asset/description_arraow_orange.png" alt="" class="float-left">
+    </div>
+    <!-- End of the Single descriptive produt information -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- footer -->
     <footer>
         <div class="bg-gray-600 text-center tracking-large text-gray-300 py-24">
-            
+
         </div>
         <div class="bg-gray-800 text-center tracking-large text-gray-300 py-2">
             <p>copyright &copy; glarosbd 2022</p>
