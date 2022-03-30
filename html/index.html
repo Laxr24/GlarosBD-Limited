@@ -21,6 +21,10 @@
         referrerpolicy="no-referrer" />
 
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <style>
         * {
             scroll-behavior: smooth;
@@ -41,7 +45,7 @@
         <div class="md:mt-36 mt-8">
             <div class="grid md:grid-cols-2 md:p-2">
                 <!-- img -->
-                <div class=" flex justify-center items-center p-2">
+                <div class=" flex justify-center items-center p-2  animate__animated animate__fadeIn">
                     <img src="./public/client/asset/hero_img.png" alt="">
                 </div>
                 <!-- end of the img -->
@@ -50,7 +54,7 @@
                 <div class="max-w-md  mt-4">
                     <h1 class="uppercase md:text-left text-center  font-bold"
                         style="letter-spacing: 1.5rem; font-size: 2rem;font-weight: 500;">glaros bd</h1>
-                    <div class="md:flex mt-8 mx-auto">
+                    <div class="md:flex mt-8 mx-auto animate__animated animate__fadeInRight">
                         <img class="flex-2 mb-5 mx-auto w-24 md:w-full" src="./public/client/asset/icon.svg" alt="">
                         <div class="flex justify-center items-center">
                             <p class="text-justify flex-3 mx-auto text-center md:text-left px-10 text-sm"
@@ -68,11 +72,12 @@
         <!-- End of the Hero -->
 
         <!-- ribbon -->
-        <div class="max-w-lg mx-auto md:px-92 text-center  py-4 flex justify-around shadow-md mt-24">
+        <div
+            class="max-w-lg mx-auto md:px-92 text-center  py-4 flex justify-around shadow-md mt-24 animate__animated animate__fadeInUp">
             <p class="text-center uppercase">resin</p>
             <p class="text-center uppercase">silicon</p>
-            <p class="text-center uppercase">mika</p>
             <p class="text-center uppercase">silicate</p>
+            <p class="text-center uppercase">and more</p>
 
         </div>
         <!-- end of ribbon -->
@@ -88,20 +93,25 @@
 
 
     <!-- product gallery -->
-    <div class="container mx-auto bg-gray-50 my-36 px-6 py-10 md:px-16">
+    <div class="container mx-auto bg-gray-50 my-36 px-6 py-10 md:px-16 animate__animated animate__fadeInUp">
+        <h1 class="uppercase text-center my-4 text-gray-600 underline"
+            style="letter-spacing: 2px; font-size: 1.8em;font-style: italic; font-weight: 400;">Products at a glance
+        </h1>
         <div class="grid md:grid-cols-4 gap-8">
 
             <!-- single card -->
             <div class="shadow-md">
                 <img src="./public/client/asset/productImage.png" class="w-full" alt="">
-                <a href="#resin" class="block text-center uppercase px-4 mt-2 py-2 border border-black">Resin</a>
+                <a href="#resin" class="block text-center uppercase px-4 mt-2 py-2 border border-black">learn more about
+                    Resin</a>
             </div>
             <!-- end of single card -->
 
             <!-- single card -->
             <div class="shadow-md">
                 <img src="./public/client/asset/productImage.png" class="w-full" alt="">
-                <a href="#mica" class="block text-center uppercase px-4 mt-2 py-2 border border-black">Mica</a>
+                <a href="#mica" class="block text-center uppercase px-4 mt-2 py-2 border border-black">learn more about
+                    Mica</a>
             </div>
             <!-- end of single card -->
 
@@ -111,70 +121,80 @@
 
 
 
-    <!-- Single descriptive produt information -->
-    <div class="my-16" id="resin">
-        <div class="container p-6 md:p-10  mx-auto grid md:grid-cols-2 gap-3">
-            <div class=" max-w-md"><img class="mx-auto" src="public/client/asset/productImage.png" alt=""></div>
-            <!-- content -->
-            <div class="max-w-md px-3">
-                <h1 class="uppercase text-center px-4 py-2 border border-black"
-                    style="font-size: 1.4em; font-weight: 400; letter-spacing: 2px;">epoxy resin</h1>
 
-                <hr class="my-3 border-4 border-green-600">
 
-                <p class="py-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias ut deleniti, facilis
-                    optio mollitia
-                    perspiciatis aliquid voluptatum. Ullam, ipsa hic.</p>
 
-                <ul class="list-disc">
-                    <li>Best quality</li>
-                    <li>Best quality</li>
-                    <li>Best quality</li>
-                    <li>Best quality</li>
-                </ul>
+
+
+    <section>
+        <h1 class="uppercase text-center my-4 text-gray-600 underline"
+            style="letter-spacing: 2px; font-size: 1.8em;font-style: italic; font-weight: 400;">product description
+        </h1>
+
+
+        <!-- Single descriptive produt information -->
+        <div class="my-24" id="resin">
+            <div class="container p-6 md:p-10  mx-auto grid md:grid-cols-2 gap-3">
+                <div class=" max-w-md"><img class="mx-auto" src="public/client/asset/productImage.png" alt=""></div>
+                <!-- content -->
+                <div class="max-w-md px-3">
+                    <h1 class="uppercase text-center px-4 py-2 border border-black"
+                        style="font-size: 1.4em; font-weight: 400; letter-spacing: 2px;">epoxy resin</h1>
+
+                    <hr class="my-3 border-4 border-green-600">
+
+                    <p class="py-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias ut deleniti, facilis
+                        optio mollitia
+                        perspiciatis aliquid voluptatum. Ullam, ipsa hic.</p>
+
+                    <ul class="list-disc">
+                        <li>Best quality</li>
+                        <li>Best quality</li>
+                        <li>Best quality</li>
+                        <li>Best quality</li>
+                    </ul>
+
+                    <div class="py-6 flex">
+                        <a href="#contact" class="  px-4 py-2 rounded-md shadow m-4 uppercase">Contact</a>
+                        <a href="#contact" class="  px-4 py-2 rounded-md shadow m-4 uppercase">order</a>
+                    </div>
+                </div>
+                <!-- end content -->
+
             </div>
-            <!-- end content -->
-
+            <img src="public/client/asset/description_arraow_purple.png" alt="" class="float-right">
         </div>
-        <img src="public/client/asset/description_arraow_purple.png" alt="" class="float-right">
-    </div>
-    <!-- End of the Single descriptive produt information -->
+        <!-- End of the Single descriptive produt information -->
 
 
-    <!-- Single descriptive produt information -->
-    <div class="my-16" id="mica">
-        <div class="container p-6 md:p-10  mx-auto grid md:grid-cols-2 gap-3">
-            <div class=" max-w-md"><img class="mx-auto" src="public/client/asset/productImage.png" alt=""></div>
-            <!-- content -->
-            <div class="max-w-md px-3">
-                <h1 class="uppercase text-center px-4 py-2 border border-black"
-                    style="font-size: 1.4em; font-weight: 400; letter-spacing: 2px;">mica</h1>
+        <!-- Single descriptive produt information -->
+        <div class="my-16" id="mica">
+            <div class="container p-6 md:p-10  mx-auto grid md:grid-cols-2 gap-3">
+                <div class=" max-w-md"><img class="mx-auto" src="public/client/asset/productImage.png" alt=""></div>
+                <!-- content -->
+                <div class="max-w-md px-3">
+                    <h1 class="uppercase text-center px-4 py-2 border border-black"
+                        style="font-size: 1.4em; font-weight: 400; letter-spacing: 2px;">mica</h1>
 
-                <hr class="my-3 border-4 border-yellow-600">
+                    <hr class="my-3 border-4 border-yellow-600">
 
-                <p class="py-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias ut deleniti, facilis
-                    optio mollitia
-                    perspiciatis aliquid voluptatum. Ullam, ipsa hic.</p>
+                    <p class="py-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias ut deleniti, facilis
+                        optio mollitia
+                        perspiciatis aliquid voluptatum. Ullam, ipsa hic.</p>
+
+                    <div class="py-6 flex">
+                        <a href="#contact" class="  px-4 py-2 rounded-md shadow m-4 uppercase">Contact</a>
+                        <a href="#contact" class="  px-4 py-2 rounded-md shadow m-4 uppercase">order</a>
+                    </div>
+                </div>
+                <!-- end content -->
+
             </div>
-            <!-- end content -->
-
+            <img src="public/client/asset/description_arraow_orange.png" alt="" class="float-left">
         </div>
-        <img src="public/client/asset/description_arraow_orange.png" alt="" class="float-left">
-    </div>
-    <!-- End of the Single descriptive produt information -->
+        <!-- End of the Single descriptive produt information -->
 
-
-
-
-
-
-
-
-
-
-
-
-
+    </section>
 
 
 
@@ -184,14 +204,42 @@
 
     <!-- footer -->
     <footer>
-        <div class="bg-gray-600 text-center tracking-large text-gray-300 py-24">
+        <div class="bg-gray-600 text-center md:text-left md:px-24  px-6 mt-6 text-gray-300 py-24">
+            <div class="md:flex justify-around">
+                <div class="my-4">
+                    <h1 class="text-3xl text-white">Contact</h1>
+                    <div class="max-w-md" id="contact">
+                        <ul class="my-3 md:text-left">
+                            <li class="my-4"><i class="fa-solid fa-phone mr-2"></i><a class="inline"
+                                    href="tel:+8801919506070">+8801919-506070</a></li>
+                            <li class="my-4"><i class="fa-solid fa-at mr-2"></i><a
+                                    href="mailto:info@glarosbd.com">info@glarosbd.com</a></li>
 
+                        </ul>
+                    </div>
+                </div>
+                <div class="my-4">
+                    <h1 class="text-3xl text-white">Address</h1>
+                    <div class="md:flex items-center mt-5 max-w-md">
+                        <span><img src="public/client/asset/arrow.svg" class="mx-auto w-10 md:mr-10 md:pr-4 py-4 "
+                                alt=""></span>
+                        <a href="https://goo.gl/maps/wGRMJQJ5HTnfogFo9" class="" target="_blank">
+
+                            ka-57/4 (3rd Floor), Kuril Chowrasta, Pragati Sharani Road, Vatara,
+                            Dhaka-1229
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="bg-gray-800 text-center tracking-large text-gray-300 py-2">
+        <div class="bg-gray-800 text-center tracking-large text-gray-500 py-2">
             <p>copyright &copy; glarosbd 2022</p>
         </div>
     </footer>
     <!-- end footer -->
+
+
+
 </body>
 
 </html>
