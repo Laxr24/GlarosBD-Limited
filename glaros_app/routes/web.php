@@ -51,7 +51,7 @@ Route::get("/test", function () {
     return view("client.index")->with(["menus" => $menus]);
 });
 
-Route::get("/model", function () {
+Route::get("/models", function () {
     $path = base_path() . "/resources/config/";
     $con = new Content();
     return $con->models($path);

@@ -47,5 +47,20 @@ Route::post("/updateHomepage", function(Request $request){
 }); 
 
 Route::post("/addproduct", function(Request $request){
-    return response()->json(["response"=>$request->name]); 
+
+    $file = $request->file('image');
+    $file->move(base_path()."/public/client/uploads", $file->getClientOriginalName());
+    $newProduct = [
+        "name"=>$request->name, 
+        "description"=>$request->description, 
+        "side"=>$request->side, 
+        "image_path"=>base_path()."/public/client/uploads/".$file->getClientOriginalName()
+    ]; 
+
+    $path = base_path()."/resources/config/";
+    $content = new Content($path, "products", []); 
+
+    $content->add($request->name, $newProduct); 
+
+    return response()->json(["response"=>200]); 
 }); 
