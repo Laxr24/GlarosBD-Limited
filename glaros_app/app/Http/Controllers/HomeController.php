@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\myclass\Content;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,6 +23,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view("admin.views.home"); 
+        $con = new Content();
+        // fileRead 
+        $filePath = base_path() . "/resources/views/client/index.blade.php";
+        return view("admin.views.home")->with(["code" => $con->FileRead($filePath)]);
+        
     }
 }

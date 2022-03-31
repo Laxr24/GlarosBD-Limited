@@ -222,8 +222,8 @@
                         Configuration files
                     <li class="nav-item">
                         <a href="#" class="nav-link tab-btn-4">
-                            <i class="fa fa-user-plus" aria-hidden="true"></i>
-                            <p>Add user</p>
+                            <i class="nav-icon fas fa-cog fa-fw"></i>
+                            <p>Site config</p>
                         </a>
                     </li>
 
