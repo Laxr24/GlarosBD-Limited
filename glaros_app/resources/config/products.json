@@ -1,8 +1,1 @@
-{
-    "first test": {
-        "name": "first test",
-        "description": "deeesssdess",
-        "side": "true",
-        "image_path": "C:\\Users\\xeronlab\\Documents\\GitHub\\GlarosBD-Limited\\glaros_app\/public\/client\/uploads\/Acetone.jpg"
-    }
-}
+{"first test":{"name":"first test","description":"deeesssdess","side":"true","image_path":"C:\\Users\\xeronlab\\Documents\\GitHub\\GlarosBD-Limited\\glaros_app\/public\/client\/uploads\/Acetone.jpg"},"Mac Test product":{"name":"Mac Test product","description":"new mac products are really good and expensive","side":"false","image_path":"\/public\/client\/uploads\/Screenshot 2022-03-18 at 2.39.41 PM.png"},"Mac Test product two":{"name":"Mac Test product two","description":"new mac products are really good and expensive","side":"false","image_path":"\/public\/client\/uploads\/Screenshot 2022-03-18 at 2.39.41 PM.png"}}

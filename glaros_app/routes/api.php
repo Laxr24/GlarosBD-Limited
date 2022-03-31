@@ -54,7 +54,7 @@ Route::post("/addproduct", function(Request $request){
         "name"=>$request->name, 
         "description"=>$request->description, 
         "side"=>$request->side, 
-        "image_path"=>base_path()."/public/client/uploads/".$file->getClientOriginalName()
+        "image_path"=>"/public/client/uploads/".$file->getClientOriginalName()
     ]; 
 
     $path = base_path()."/resources/config/";
