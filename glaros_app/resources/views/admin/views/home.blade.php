@@ -222,8 +222,20 @@
                         Configuration files
                     <li class="nav-item">
                         <a href="#" class="nav-link tab-btn-4">
-                            <i class="nav-icon fas fa-cog fa-fw"></i>
-                            <p>Site config</p>
+                            <i class="nav-icon fa fa-plus" aria-hidden="true"></i>
+                            <p>Add new product</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link tab-btn-5">
+                            <i class="nav-icon fa-solid fa-pen-to-square"></i>
+                            <p>Edit product</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link tab-btn-6">
+                            <i class="nav-icon fa fa-cogs" aria-hidden="true"></i>
+                            <p>Site settings</p>
                         </a>
                     </li>
 
