@@ -45,3 +45,7 @@ Route::post("/updateHomepage", function(Request $request){
     }
     return $content->FileRead($path); 
 }); 
+
+Route::post("/addproduct", function(Request $request){
+    return response()->json(["response"=>$request->name]); 
+}); 

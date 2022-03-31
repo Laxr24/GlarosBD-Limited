@@ -26,13 +26,13 @@
                     class="p-2 w-full  font-mono tracking-wider border-none outline-none rounded-md text-white bg-gray-700"
                     rows="20">
                     @if ($code)
-                      {{ $code }} 
-                    @endif
+<pre>{{ $code }} </pre>
+                @endif
                 </textarea>
                 <button class="rounded-md bg-gradient-to-br from-green-400 to-green-300 px-4 py-2 m-2"
                     onclick="updatePage()">Update</button>
-                <button class="rounded-md bg-gradient-to-br from-yellow-400 to-yellow-300 px-4 py-2 m-2"
-                    onclick="Toast('Reset file complete!', 3000, 'warning')">Reset</button>
+                <button class="rounded-md bg-gradient-to-br from-yellow-400 to-yellow-300 px-4 py-2 m-2" onclick="rst()"
+                    id="rstBtn">Reset</button>
             </div>
         </section>
         <!-- /.content -->
@@ -42,8 +42,11 @@
 
 
     <script>
+        var rstBtn = document.getElementById("rstBtn");
+        var rstData = "";
+        var content = document.getElementById("fileContent");
+
         function updatePage() {
-            var content = document.getElementById("fileContent");
             axios.post("/api/updateHomepage", {
                 "content": content.value
             }).then((res) => {
@@ -51,11 +54,19 @@
                 if (res.status == 200) {
                     Toast("Updated", 2000)
                     content.value = res.data
+                    rstData = res.data
                 } else {
                     Toast("Some server side error happedend", 2000, "warning")
                 }
             }).catch((e) => {
                 Toast("Error!", 2000, "danger")
             })
+
         }
+
+        function rst(){
+            content.value = rstData
+            Toast("Theme was reset!", 2000, "warning")
+        }
+
     </script>
