@@ -90,11 +90,16 @@ function addProduct(){
 
   let formData = new FormData(); 
 
-  formData.append("name",name.value)
+  formData.append("name",name.value || Date.now())
   formData.append("description", description.value)
   formData.append("image", image)
   formData.append("side", postOrientation.value)
 
+  name.value = ""
+  description.value = ""
+  image= ""
+  postOrientation.value = "true"
+  
 
   axios.post("/api/addproduct",formData, {headers: { "Content-Type": "multipart/form-data" }},).then((res)=>{
     console.log(res.data)
