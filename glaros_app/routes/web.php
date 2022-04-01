@@ -26,29 +26,19 @@ Auth::routes();
 
 
 Route::get("/test", function () {
-    // Menue configuration and settings
-    $path = base_path() . "/resources/config/";
-    $con = new Content();
-    $allModels =  $con->models($path);
+    $path = base_path()."/resources/config/"; 
+    $content = new Content($path, "products"); 
+    
+    $fetchData =   json_decode(json_encode($content->get()), true) ; 
 
+    $products = []; 
 
-    //Settings by categories
-    $menus = [];
-    $site = [];
-
-    $header_code = "";
-    $body_code = "";
-    $footer_code = "";
-
-    // Menus 
-    foreach ($allModels as $i) {
-        if ($i["model"] == "settings") {
-            $menus = $i["data"]->menus;
-        }
+    foreach($fetchData as $i){
+        array_push($products, $i); 
     }
 
 
-    return view("client.index")->with(["menus" => $menus]);
+    return view("client.index")->with(["products" =>$products]);
 });
 
 Route::get("/models", function () {

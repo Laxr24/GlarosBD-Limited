@@ -64,3 +64,18 @@ Route::post("/addproduct", function(Request $request){
 
     return response()->json(["response"=>200]); 
 }); 
+
+Route::get("/allproducts", function(){
+    $path = base_path()."/resources/config/"; 
+    $content = new Content($path, "products"); 
+    
+    $fetchData =   json_decode(json_encode($content->get()), true) ; 
+
+    $product = []; 
+
+    foreach($fetchData as $i){
+        array_push($product, $i); 
+    }
+    return $product; 
+
+}); 

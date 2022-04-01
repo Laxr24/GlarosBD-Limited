@@ -1,9 +1,0 @@
-{
-    "class": "cour", 
-    "students":[
-        {"name": "student 1"},
-        {"name": "student 2"},
-        {"name": "student 3"},
-        {"name": "student 4"}
-    ]
-}

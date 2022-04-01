@@ -98,11 +98,11 @@ function addProduct(){
   name.value = ""
   description.value = ""
   image= ""
-  postOrientation.value = "true"
   
 
   axios.post("/api/addproduct",formData, {headers: { "Content-Type": "multipart/form-data" }},).then((res)=>{
     console.log(res.data)
+    Toast("Product added sucessfully", 2000)
   }).catch((e)=>{
     console.error(e)
   })

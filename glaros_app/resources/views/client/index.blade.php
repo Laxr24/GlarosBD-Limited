@@ -62,10 +62,10 @@
                         <img class="flex-2 mb-5 mx-auto w-24 md:w-full" src="public/client/asset/icon.svg" alt="">
                         <div class="flex justify-center items-center">
                             <p class="text-justify flex-3 mx-auto text-center md:text-left px-10 text-sm"
-                                style="letter-spacing: 1px;">Were the best glaros product sellerin bangladesh . we sell
-                                some really cool product which will blow your mind but
-                                the most important thing is we have dedicated team to
-                                work for your service</p>
+                                style="letter-spacing: 1px;">
+                                 We're the best silicon and industry grade construction material supplier in Bangladesh with a wide range of services. Our products are tested and trusted throughout the industrial community. 
+  
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -103,21 +103,17 @@
         </h1>
         <div class="grid md:grid-cols-4 gap-8">
 
-            <!-- single card -->
-            <div class="shadow-md">
-                <img src="public/client/asset/productImage.png" class="w-full" alt="">
-                <a href="#resin" class="block text-center uppercase px-4 mt-2 py-2 border border-black">learn more about
-                    Resin</a>
+            @foreach ($products as $product )
+                 <div class="md:max-w-sm">
+                <img src="{{$product['image_path']}}" class="w-full" alt="">
+                <a href="#{{$product['name']}}" class="block text-center uppercase px-4 mt-2 py-2 border border-black">learn more about
+                    {{$product['name']}}</a>
             </div>
             <!-- end of single card -->
+            @endforeach
+            <!-- single card -->
+           
 
-            <!-- single card -->
-            <div class="shadow-md">
-                <img src="public/client/asset/productImage.png" class="w-full" alt="">
-                <a href="#mica" class="block text-center uppercase px-4 mt-2 py-2 border border-black">learn more about
-                    Mica</a>
-            </div>
-            <!-- end of single card -->
 
         </div>
     </div>
@@ -130,6 +126,7 @@
 
 
 
+    {{-- Descriptive product overview  --}}
     <section>
         <h1 class="uppercase text-center my-4 text-gray-600 "
             style="letter-spacing: 2px; font-size: 2em; font-weight: 400; font-family: 'PT Serif', serif;">product
@@ -137,27 +134,23 @@
         </h1>
 
 
-        <!-- Single descriptive produt information -->
-        <div class="my-24" id="resin">
+       @foreach ($products as $product)
+           @if($product['side'] == "true")
+ {{-- Right side  --}}
+                <!-- Single descriptive produt information -->
+        <div class="my-24" id="{{$product['name']}}">
             <div class="container p-6 md:p-10  mx-auto grid md:grid-cols-2 gap-3">
-                <div class=" max-w-md"><img class="mx-auto" src="public/client/asset/productImage.png" alt=""></div>
+                <div class=" max-w-md"><img class="mx-auto" src="{{$product['image_path']}}" alt=""></div>
                 <!-- content -->
                 <div class="max-w-md px-3">
                     <h1 class="uppercase text-center px-4 py-2 border border-black"
-                        style="font-size: 1.4em; font-weight: 400; letter-spacing: 2px;">epoxy resin</h1>
+                        style="font-size: 1.4em; font-weight: 400; letter-spacing: 2px;">{{$product['name']}}</h1>
 
                     <hr class="my-3 border-4 border-green-600">
 
-                    <p class="py-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias ut deleniti, facilis
-                        optio mollitia
-                        perspiciatis aliquid voluptatum. Ullam, ipsa hic.</p>
-
-                    <ul class="list-disc">
-                        <li>Best quality</li>
-                        <li>Best quality</li>
-                        <li>Best quality</li>
-                        <li>Best quality</li>
-                    </ul>
+                   
+                        {{$product['description']}}
+                    
 
                     <div class="py-6 flex">
                         <a href="#contact" class="  px-4 py-2 rounded-md shadow m-4 uppercase">Contact</a>
@@ -170,22 +163,26 @@
             <img src="public/client/asset/description_arraow_purple.png" alt="" class="float-right">
         </div>
         <!-- End of the Single descriptive produt information -->
+        {{-- Right side  --}}
 
 
+
+           @else
+                        {{-- Left side --}}
         <!-- Single descriptive produt information -->
-        <div class="my-16" id="mica">
+        <div class="my-16" id="{{$product['name']}}">
             <div class="container p-6 md:p-10  mx-auto grid md:grid-cols-2 gap-3">
-                <div class=" max-w-md"><img class="mx-auto" src="public/client/asset/productImage.png" alt=""></div>
+                <div class=" max-w-md"><img class="mx-auto" src="{{$product['image_path']}}" alt=""></div>
                 <!-- content -->
                 <div class="max-w-md px-3">
                     <h1 class="uppercase text-center px-4 py-2 border border-black"
-                        style="font-size: 1.4em; font-weight: 400; letter-spacing: 2px;">mica</h1>
+                        style="font-size: 1.4em; font-weight: 400; letter-spacing: 2px;">{{$product['name']}}</h1>
 
                     <hr class="my-3 border-4 border-yellow-600">
 
-                    <p class="py-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Alias ut deleniti, facilis
-                        optio mollitia
-                        perspiciatis aliquid voluptatum. Ullam, ipsa hic.</p>
+                    
+                        {{$product['description']}}
+                    
 
                     <div class="py-6 flex">
                         <a href="#contact" class="  px-4 py-2 rounded-md shadow m-4 uppercase">Contact</a>
@@ -198,6 +195,9 @@
             <img src="public/client/asset/description_arraow_orange.png" alt="" class="float-left">
         </div>
         <!-- End of the Single descriptive produt information -->
+        {{-- Left side --}}
+           @endif
+       @endforeach
 
     </section>
 
