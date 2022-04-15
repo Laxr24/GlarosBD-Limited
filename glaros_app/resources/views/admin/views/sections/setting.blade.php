@@ -26,7 +26,7 @@
                     class="p-2 w-full  font-mono tracking-wider border-none outline-none rounded-md text-white bg-gray-700"
                     rows="20">
                     @if ($code)
-<pre>{{ $code }} </pre>
+                    {{ $code }} 
                 @endif
                 </textarea>
                 <button class="rounded-md bg-gradient-to-br from-green-400 to-green-300 px-4 py-2 m-2"
