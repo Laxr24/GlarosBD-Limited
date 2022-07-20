@@ -1,3 +1,4 @@
+@if (Auth::user()->role == "Admin")
     <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper tab-6">
       <!-- Content Header (Page header) -->
@@ -26,3 +27,6 @@
       <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
+
+
+@endif

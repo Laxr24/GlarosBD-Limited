@@ -1,4 +1,7 @@
-    <!-- Content Wrapper. Contains page content -->
+@if (Auth::user()->role == "Admin")
+    
+
+<!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper tab-2">
         <!-- Content Header (Page header) -->
         <div class="content-header">
@@ -26,8 +29,8 @@
                     class="p-2 w-full  font-mono tracking-wider border-none outline-none rounded-md text-white bg-gray-700"
                     rows="20">
                     @if ($code)
-                    {{ $code }} 
-                @endif
+                     {{ $code }} 
+                    @endif
                 </textarea>
                 <button class="rounded-md bg-gradient-to-br from-green-400 to-green-300 px-4 py-2 m-2"
                     onclick="updatePage()">Update</button>
@@ -70,3 +73,5 @@
         }
 
     </script>
+
+@endif

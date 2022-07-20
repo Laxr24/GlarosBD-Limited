@@ -148,8 +148,8 @@
                     @csrf
                 </form>
                 <a class="bg-red-800 px-4 py-2 hover:bg-black uppercase text-white font-bold rounded-md shadow-md"
-                    href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
+                    href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit(); " 
+                     >
                     {{ __('Logout') }}
                 </a>
 
@@ -183,12 +183,14 @@
                         class="img-circle elevation-2" alt="User Image">
                 </div>
                 <div class="info">
-                    <a href="#" class="d-block">{{ config('app.name', 'Default') }}</a>
+                    <a href="#" class="d-block">{{ Auth::user()->name }}</a>
+                    <p class="mt-2 text-gray-400 font-sm font-mono d-block">Logged in as <span class="text-pink-400">{{ Auth::user()->role }}</span></p>
                 </div>
+               
             </div>
 
             <!-- SidebarSearch Form -->
-            <div class="form-inline">
+            {{-- <div class="form-inline">
                 <div class="input-group" data-widget="sidebar-search">
                     <input class="form-control form-control-sidebar" type="search" placeholder="Search"
                         aria-label="Search">
@@ -198,7 +200,7 @@
                         </button>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
             <!-- Sidebar Menu -->
             <nav class="mt-2">
@@ -212,12 +214,14 @@
                             </p>
                         </a>
                     </li>
+                    @if (Auth::user()->role == "Admin")
                     <li class="nav-item">
                         <a href="#" class="nav-link tab-btn-2">
                             <i class="nav-icon fas fa-cog fa-fw"></i>
                             <p>Theme settings</p>
                         </a>
                     </li>
+                    @endif
                     <li class="nav-header">
                         Configuration files
                     <li class="nav-item">
@@ -232,12 +236,14 @@
                             <p>Edit product</p>
                         </a>
                     </li>
+                    @if (Auth::user()->role == "Admin")
                     <li class="nav-item">
                         <a href="#" class="nav-link tab-btn-6">
                             <i class="nav-icon fa fa-cogs" aria-hidden="true"></i>
                             <p>Site settings</p>
                         </a>
                     </li>
+                    @endif
 
                     </li>
                 </ul>

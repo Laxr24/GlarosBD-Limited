@@ -4,28 +4,21 @@ use App\myclass\Content;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
-// Home Route
-Route::get('/', function () {
-    return view("error.404");
-});
-
-// Admin Routes
-Route::get("/admin", function () {
-    $con = new Content();
-    // fileRead 
-    $filePath = base_path() . "/resources/views/client/index.blade.php";
-    return view("admin.views.home")->with(["code" => $con->FileRead($filePath)]);
-});
-
-// Default fallback 
-Route::fallback(function () {
-    return view("Client-Fallback");
-});
-
-Auth::routes();
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
 
 
-Route::get("/test", function () {
+
+
+Route::get("/", function () {
     $path = base_path()."/resources/config/"; 
     $content = new Content($path, "products"); 
     
@@ -41,10 +34,20 @@ Route::get("/test", function () {
     return view("client.index")->with(["products" =>$products]);
 });
 
-Route::get("/models", function () {
-    $path = base_path() . "/resources/config/";
+Route::get('/dashboard', function () {
+    // return response()->json(["name"=>Auth::user()->name, "role"=>Auth::user()->role, "email"=>Auth::user()->email]); 
+    // return view('dashboard');
     $con = new Content();
-    return $con->models($path);
+    // fileRead 
+    $filePath = base_path() . "/resources/views/client/index.blade.php";
+    return view("admin.views.home")->with(["code" => $con->FileRead($filePath)]);
+})->middleware(['auth'])->name('dashboard');
+
+require __DIR__.'/auth.php';
+
+
+// Default fallback 
+Route::fallback(function () {
+    return view("Client-Fallback");
 });
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
